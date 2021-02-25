@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: ghostwhite;
+  border-radius: 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.arrow-hidden::after {
+  content: '';
+  width: 1rem;
+}
+
+.arrow-down::after {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  content: url('./images/arrow-down-circle.svg');
+}
+
+.arrow-up::after {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  content: url('./images/arrow-up-circle.svg');
+}
