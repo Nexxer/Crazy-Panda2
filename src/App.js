@@ -89,6 +89,7 @@ function App() {
   //Устанавливаем сортированный массив для отображения
   React.useEffect(() => {
     setShowData(items);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sortConfig]);
 
   //Убираем класс индикации сортировки
@@ -112,7 +113,6 @@ function App() {
       resultArray[chunkIndex] = [];
     }
     resultArray[chunkIndex].push(item);
-    console.log(resultArray);
     return resultArray;
   }, []);
 
